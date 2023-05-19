@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    background-color: #f5f6f7;
+}
+#content {
+    width: 460px;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 19px 0 8px;
+}
+input {
+    outline: none;
+}
+
+/* 에러메시지 */
+.error_next_box {
+    display: none;
+    color: red;
+    margin-top: 9px;
+    font-size: 12px;
+}
+#alertTxt {
+    display: none;
+    color: red;
+    position: absolute;
+    right: 38px; top: 19px;
+    font-size: 12px;
+}
+
+.box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px 4px 10px;
+}
+
+.int {
+    display: block;
+    width: 100%; height: 29px;
+    border: none;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+/* ------------------------- header */
+#header {
+    text-align: center;
+    padding: 62px 0 20px;
+}
+#header a img {
+    width: 240px; height: 44px;
+    cursor: pointer;
+}
+
+/* id */
+.step_url {
+    position: absolute;
+    right: 16px; top: 16px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8e8e8e;
+}
+
+.box.int_id {
+    padding-right: 100px;
+}
+/* password */
+.paswdImg {
+    position: absolute;
+    right: 16px; top: 50%;
+    transform: translateY(-50%);
+    width: 20px; height: 22px;
+}
+
+/* birthday */
+#bir_wrap {
+    display: flex; /* 나란히 정렬 */
+    justify-content: space-between; /* 칸 사이 동일 */
+}
+#bir_wrap>div {
+    width: 147px;
+}
+select.sel {
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    appearance: none; /* 모양을 없앰 (다운화살표 제거) */
+    background: url(img/sel_arr_2x.gif) no-repeat 100% 50%;
+    background-size: 20px 8px;
+    outline: none; /* 클릭했을 때 생기는 테두리 제거 */
+}
+
+/* email */
+#content>div:nth-child(7) {
+    position: relative;
+}
+.optional {
+    position: absolute;
+    left: 112px; top: 0;
+    font-size: 12px;
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+
+/* button */
+.btn_area {
+    margin: 30px 0 9px;
+}
+.btn_area #btnJoin {
+    border: none;
+    background-color: #08a600;
+    width: 100%;
+    color: #fff;
+    padding: 21px 0 17px;
+    cursor: pointer;
+    font-size: 20px;
+}
